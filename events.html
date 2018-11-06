@@ -10,25 +10,41 @@
 
 <body>
     <section>
-        <div class="data-content"></div>
+        <section id="modal">
 
-        <template id="data-template">
-            <div>
-
-                <img class="topImage" src="" alt="">
-
+            <div id="modal-content">
                 <h2></h2>
-                <!--                    <p class="data-textarea"></p>-->
-                <p class="data-teasertekst"></p>
-                <p class="data-dato"></p>
-                <p class="data-tidspunkt"></p>
-                <p class="data-venue"></p>
+                <span class="img_modal">
+                    <img class="modal-billede">
+                </span>
+                <p class="data-tekst"></p>
                 <p class="data-pris"></p>
-                <button class="data-button"></button>
-
+                <p class="data-venue"></p>
+                <p class="data-dato"></p>
             </div>
-        </template>
+        </section>
 
+        <main>
+            <div class="data-content"></div>
+
+
+            <template id="data-template">
+                <div>
+                    <img class="topImage" src="" alt="">
+                    <h2></h2>
+
+                    <p class="data-teasertekst"></p>
+                    <p class="data-dato"></p>
+                    <p class="data-tidspunkt"></p>
+                    <p class="data-venue"></p>
+                    <p class="data-pris"></p>
+                    <button class="data-button"></button>
+
+
+                </div>
+            </template>
+
+        </main>
     </section>
 
     <script src="Javacript/script_events.js"></script>
