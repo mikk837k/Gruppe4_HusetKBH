@@ -1,0 +1,17 @@
+<div class="knap data_facilitet" data-id="51">Knap</div>
+<script>
+    document.addEventListener("DOMContentLoaded", chooseVenue);
+    let id;
+
+    function chooseVenue() {
+        console.log("showPosts er kørt");
+        document.querySelector(".data_facilitet").addEventListener("click", goToPage);
+    }
+
+    function goToPage() {
+        id = this.getAttribute("data-id");
+        console.log(id);
+        window.location.href = "single.html?id=" + id;
+    }
+
+</script>
