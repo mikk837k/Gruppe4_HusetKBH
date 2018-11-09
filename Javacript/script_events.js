@@ -7,7 +7,26 @@ let eventet;
 let modal = document.querySelector("#modal");
 let destination = document.querySelector(".data-content");
 
+let post;
+
 let all = [];
+
+
+let dest = document.querySelector(".data-content");
+
+eventFilter = "alle";
+
+document.querySelectorAll(".event-item").forEach(knap => {
+    knap.addEventListener("click", filtrering)
+});
+
+function filtrering() {
+    dest.textContent = "";
+
+    // denne data-attribute  = et sted hvor man kan gemme værdier //
+    eventFilter = this.getAttribute("data-kategori");
+    showPosts();
+}
 
 async function getJSON() {
 
@@ -40,32 +59,41 @@ async function getJSON() {
 
     console.log(all);
     showPosts();
+
 }
+
+
+
 
 function showPosts() {
     let myTemplate = document.querySelector("#data-template");
+    document.querySelector("h2").textContent = eventFilter;
 
     console.log("showPosts kørt");
 
     all.forEach(post => {
-        let klon = myTemplate.cloneNode(true).content;
-        klon.querySelector("img").src = post.acf.billede;
-        klon.querySelector("img").addEventListener("click", () => {
-            visModal(post);
-        });
-
-        klon.querySelector("h2").innerHTML = post.acf.titel;
-        klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
-        klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
-        klon.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + post.acf.tidspunkt;
-
-        klon.querySelector(".data-pris").innerHTML = "Pris: " + post.acf.pris + " kr";
-        klon.querySelector(".data-button").innerHTML = post.acf.kobtilmeld;
-        klon.querySelector(".data-venue").innerHTML = "Venue: " + post.acf.venue;
-        //        klon.querySelector(".data-textarea").innerHTML = post.acf.tekst;
-        destination.appendChild(klon);
+        if (post.acf.eventtype == eventFilter || eventFilter == "alle") {
 
 
+            let klon = myTemplate.cloneNode(true).content;
+
+            klon.querySelector("img").src = post.acf.billede;
+            klon.querySelector("img").addEventListener("click", () => {
+                visModal(post);
+            });
+
+            klon.querySelector("h2").innerHTML = post.acf.titel;
+            klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
+            klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
+            klon.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + post.acf.tidspunkt;
+
+            klon.querySelector(".data-pris").innerHTML = "Pris: " + post.acf.pris + " kr";
+            klon.querySelector(".data-button").innerHTML = post.acf.kobtilmeld;
+            klon.querySelector(".data-venue").innerHTML = "Venue: " + post.acf.venue;
+            //        klon.querySelector(".data-textarea").innerHTML = post.acf.tekst;
+            destination.appendChild(klon);
+
+        }
     })
 
 

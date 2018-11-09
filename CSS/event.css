@@ -34,6 +34,12 @@ div:hover {
 
 }
 
+.data-tekst {
+    margin: 10px 60px;
+    word-spacing: 1px;
+    word-wrap: break-word;
+}
+
 .data-content img {
     grid-column: 1 / span 3;
 }
@@ -45,16 +51,43 @@ h2 {
 
 }
 
-button {
-    grid-column: 2;
-    border-radius: 5%;
-    border-color: rgba(162, 162, 162, 0.42);
-    cursor: pointer;
+p {
+    word-break: normal;
+
 }
 
-button:hover {
-    background-color: #ffacac;
+.event_button {
+    border: none;
+    text-align: center;
+    display: block;
 }
+
+.event-item {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.event-item:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.data-button {
+    grid-column: 2;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+.data-button:hover {
+
+    border-bottom: 2px solid red;
+}
+
+
 
 #myImg {
     border-radius: 5px;
@@ -120,7 +153,7 @@ button:hover {
     grid-column: 1 / span 3;
     grid-row: 3;
     text-align: left;
-    padding: 30px;
+    padding-top: 30px;
 
 }
 
@@ -146,7 +179,7 @@ button:hover {
 
 @media screen and (min-width:550px) {
     #modal-content {
-        grid-template-rows: 150px 50px 1fr;
+        grid-template-rows: 200px 50px 1fr;
     }
 
 
@@ -197,7 +230,7 @@ button:hover {
 
 @media screen and (min-width:1000px) {
     #modal-content {
-        grid-template-rows: 200px 30px 1fr;
+        grid-template-rows: 250px 40px 1fr;
     }
 }
 
@@ -218,7 +251,7 @@ button:hover {
     }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1200px) {
     #modal-content {
         grid-template-rows: 350px 10px 1fr;
         width: 80%;
