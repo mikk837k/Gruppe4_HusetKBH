@@ -5,6 +5,7 @@ let myFilmPosts;
 let myTeaterPosts;
 let eventet;
 let modal = document.querySelector("#modal");
+let closeModal = document.querySelector(".luk");
 let destination = document.querySelector(".data-content");
 
 let post;
@@ -81,15 +82,12 @@ function showPosts() {
             klon.querySelector("img").addEventListener("click", () => {
                 visModal(post);
             });
-
             klon.querySelector("h2").innerHTML = post.acf.titel;
             klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
             klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
-            klon.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + post.acf.tidspunkt;
-
             klon.querySelector(".data-pris").innerHTML = "Pris: " + post.acf.pris + " kr";
             klon.querySelector(".data-button").innerHTML = post.acf.kobtilmeld;
-            klon.querySelector(".data-venue").innerHTML = "Venue: " + post.acf.venue;
+
             //        klon.querySelector(".data-textarea").innerHTML = post.acf.tekst;
             destination.appendChild(klon);
 
@@ -108,14 +106,20 @@ function visModal(eventet) {
     modal.querySelector("h2").innerHTML = eventet.acf.titel;
     modal.querySelector(".data-tekst").innerHTML = eventet.acf.tekst;
     modal.querySelector(".data-dato").innerHTML = "Dato: " + eventet.acf.dato;
-
+    modal.querySelector(".data-venue").innerHTML = "Venue: " + eventet.acf.venue;
     modal.querySelector(".data-pris").innerHTML = "Pris: " + eventet.acf.pris + " kr";
     modal.querySelector(".data-venue").innerHTML = "Venue: " + eventet.acf.venue;
-
-    modal.querySelector("div").addEventListener("click", hideModal);
+    modal.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + eventet.acf.tidspunkt;
+    modal.querySelector(".data-button").innerHTML = eventet.acf.kobtilmeld;
+    //    modal.classList("div").addEventListener("click", hideModal);
+    window.onclick = function (event) {
+        if (event.target == closeModal) {
+            modal.classList.remove("vis");
+        }
+    }
 }
 
-function hideModal() {
-    modal.classList.remove("vis");
-
-}
+//function hideModal() {
+//    modal.classList.remove("vis");
+//
+//}
