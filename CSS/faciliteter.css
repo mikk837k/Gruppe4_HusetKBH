@@ -1,92 +1,187 @@
-.singelview_data_content {
-    grid-column: 2;
+/*-----------------Styling----------------*/
+body {
+    background-color: #2a3a38;
+    margin: 0;
 }
 
-.singelview_data_content img {
+#singelview_container {
+    margin: 0 10px;
+
+}
+
+#singelview_container img {
     width: 100%;
 }
 
-.infobox {
+.singelview_data .singelview_data_content {
+    background-color: white;
     display: grid;
-    grid-template-rows: auto;
-    grid-row-gap: 8px
+    grid-template-columns: 2% auto 2%;
+    grid-template-rows: repeat(5, auto);
+}
+
+.singelview_splash {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.singelview_data h2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.singelview_data .data_textarea {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.singelview_data .singelview_data_content .infobox {
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.singelview_data h3 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.infobox h3 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.data_openinghours {
+    grid-row: 2;
 }
 
 .data_url {
     grid-row: 3;
 }
 
-.data_facebook_url {
+.infobox .data_facebook_url {
     grid-row: 4;
 }
 
-.infobox h3 {
-    margin: 0;
+/*-----------------slut Styling slut----------------*/
+
+@media screen and (min-width: 667px) {
+
+    .singelview_data .singelview_data_content .infobox {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(6, auto);
+
+    }
+
+    .data_openinghours {
+        align-self: start;
+        grid-row: 2 / span 4;
+        margin-top: 0;
+    }
+
+    .data_url {
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    }
+
+    .infobox .data_facebook_url {
+        grid-column: 2;
+        grid-row: 4 / span 2;
+    }
 }
 
-.data_openinghours {
-    margin: 0;
-}
-
-@media screen and (min-width:1024px) {
-    #singelview_container {
-        display: grid;
-        grid-template-columns: 10% auto 10%;
+@media screen and (min-width: 768px) {
+    .singelview_splash {
+        height: 400px;
+        overflow: hidden;
     }
 
-    .singelview_data_content div {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto auto;
+    .singelview_splash img {
+        position: relative;
+        top: -150px;
     }
 
-    .singelview_data_content div h2 {
-        grid-column: 1 / span 3;
-        grid-row: 2;
-    }
-
-    .singelview_data_content h3 {
-        grid-column: 1 / span 2;
-        grid-row: 4;
-    }
-
-    .data_textarea {
-        grid-column: 1 / span 2;
-        grid-row: 3;
-    }
-
-    .infobox {
-        grid-column: 3;
-        grid-row: 3;
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+    .singelview_data .singelview_data_content .infobox {
+        grid-template-columns: 12% auto auto 2%;
     }
 
     .infobox h3 {
-        grid-column: 1 / span 2;
+        grid-column: 2;
         grid-row: 1;
     }
 
     .data_openinghours {
-        grid-column: 1 / span 3;
+        grid-column: 2;
+        grid-row: 2 / span 4;
+        margin-top: 0;
+    }
+
+    .data_url {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+    }
+
+    .infobox .data_facebook_url {
+        grid-column: 3;
+        grid-row: 4 / span 2;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .singelview_splash {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .singelview_splash img {
+        position: relative;
+        top: -200px;
+    }
+
+    .singelview_data .singelview_data_content {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 2% auto 300px 2%;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .singelview_splash {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    .singelview_data_content .data_textarea {
+        padding-right: 40px;
+    }
+
+    .singelview_data .singelview_data_content .infobox {
+        grid-column: 3;
+        grid-row: 3;
+        grid-template-columns: 2% auto 2%;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .infobox h3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .data_openinghours {
+        grid-column: 2;
         grid-row: 2;
     }
 
     .data_url {
-        grid-column: 1 / span 3;
+        grid-column: 2;
         grid-row: 3;
-        margin: 10px 0;
     }
 
-    .data_facebook_url {
-        grid-column: 1 / span 3;
+    .infobox .data_facebook_url {
+        grid-column: 2;
         grid-row: 4;
-        margin: 10px 0;
-    }
-
-    .singelview_data_content img {
-        width: 100%;
-        grid-column: 1 / span 3;
     }
 }
+}
+
+/*-----------------slut Grid opsætning slut ----------------*/
