@@ -1,11 +1,9 @@
 let myPosts;
-//let myTemplate = document.querySelector("#data_template");
 //Laver søgning i URL'en
 let urlPrams = new URLSearchParams(window.location.search);
 //Henter værdien "id" fra URL'en hvis den er tilstede
 let id = urlPrams.get("id");
 console.log(id);
-//Samler alle json filer i en lang arrays
 let destination = document.querySelector(".data-content");
 
 document.addEventListener("DOMContentLoaded", getJSON);
