@@ -9,10 +9,13 @@
 </head>
 
 <body>
+    <!--   tilføj ?id=51 til url'en indtil at forsiden er lavet og har den nødvendige data for at js kan hente og medbringe id i url'en -->
     <main id="singelview_container">
-        <div class="singelview_data_content">
-            <div>
-                <img src="" alt="">
+        <div class="singelview_data">
+            <div class="singelview_data_content">
+                <div class="singelview_splash">
+                    <img src="" alt="">
+                </div>
                 <h2></h2>
                 <p class="data_textarea"></p>
                 <div class="infobox">
@@ -23,6 +26,17 @@
                 </div>
                 <h3>Kommende events:</h3>
             </div>
+            <div class="data-content"></div>
+            <template id="data-template">
+                <div class="event_content">
+                    <img class="topImage" src="" alt="">
+                    <h2></h2>
+                    <p class="data-teasertekst"><span> <a href="">Læs mere</a></span></p>
+                    <p class="data-dato"></p>
+                    <p class="data-pris"></p>
+                    <button class="data-button"></button>
+                </div>
+            </template>
         </div>
     </main>
 
