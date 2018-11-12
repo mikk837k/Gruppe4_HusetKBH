@@ -51,8 +51,13 @@ function showFacility() {
 
 function showPosts() {
     let myTemplate = document.querySelector("#data-template");
+    let removeHide = document.querySelector(".upcoming_events");
 
     console.log("showPosts kørt");
+    if (id == 57) {
+        removeHide.classList.add("hide");
+        console.log("hide tilføjet")
+    }
     if (id == 59) {
         myMusicPosts.forEach(post => {
 
