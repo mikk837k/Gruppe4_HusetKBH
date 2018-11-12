@@ -6,7 +6,6 @@ body {
 
 #singelview_container {
     margin: 0 10px;
-
 }
 
 #singelview_container img {
@@ -251,6 +250,10 @@ body {
         top: -200px;
     }
 
+    #singelview_container {
+        margin: 0 30px;
+    }
+
     .singelview_data .singelview_data_content {
         background-color: white;
         display: grid;
@@ -297,6 +300,33 @@ body {
     .singelview_event_container {
         grid-column: 2 / span 2;
     }
+
+    .singelview_event_container .data-content {
+        grid-row: 2;
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 50px;
+    }
+
+    .event_content {
+        grid-template-rows: 180px 60px repeat(3, auto) 20px;
+        padding-bottom: 20px;
+    }
+
+    .event_content .topImage {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .event_content .topImage img {
+        position: relative;
+        top: 0px;
+    }
+
+    .event_content .data-teasertekst {
+        grid-column: 1 / span 3;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -310,16 +340,15 @@ body {
         top: -300px;
     }
 
-    .event_content .topImage {
-        height: 400px;
-        overflow: hidden;
+    #singelview_container {
+        margin: 0 150px;
     }
 
-    .event_content .topImage img {
-        position: relative;
-        top: -150px;
+    .event_content {
+        grid-template-rows: 200px repeat(4, auto) 20px;
+        padding-bottom: 20px;
     }
 }
-}
+
 
 /*-----------------slut Grid opsætning slut ----------------*/
