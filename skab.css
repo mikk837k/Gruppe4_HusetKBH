@@ -1,11 +1,23 @@
-main {
+.page_container_skab_events {
+    grid-template-columns: 100%;
+    grid-template-rows: 80px auto auto;
+}
 
+.container_skab_events {
+    padding-top: 50px;
+    background-color: white;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
     color: #444;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+}
 
-
+.container_skab_events footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .section1 {
@@ -34,7 +46,7 @@ main {
 
 }
 
-img {
+.container_skab_events img {
     width: 100%;
 
 
@@ -46,25 +58,25 @@ img {
 
 }
 
-h1 {
+.container_skab_events h1 {
     text-align: center;
     font-size: 3em;
     color: black;
 }
 
-h2 {
+.container_skab_events h2 {
     font-size: 1.5em;
     margin-left: 10px;
 
 }
 
-h3 {
+.container_skab_events h3 {
     font-size: 1.2em;
     margin-left: 10px;
 
 }
 
-p {
+.container_skab_events p {
     word-break: normal;
     font-size: 1em;
     word-spacing: normal;
@@ -107,7 +119,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:700px) {
-    main {
+    .container_skab_events {
         display: grid;
         grid-template-columns: 350px auto;
         grid-template-rows: auto;
@@ -130,7 +142,7 @@ input[type=submit]:hover {
         grid-row-end: 3;
     }
 
-    h1 {
+    .container_skab_events h1 {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -152,7 +164,7 @@ input[type=submit]:hover {
 
     }
 
-    img {
+    .container_skab_events img {
         margin-top: 20px;
     }
 
@@ -174,9 +186,21 @@ input[type=submit]:hover {
 
 }
 
+@media screen and (min-width:940px) {
+    .page_container_skab_events {
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 50px auto auto;
+    }
 
+    .container_skab_events {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}
+
+/*
 @media screen and (min-width:1000px) {
-    main {
+    .container_skab_events {
         display: grid;
         grid-template-columns: 450px auto 450px;
         ;
@@ -186,7 +210,7 @@ input[type=submit]:hover {
 
     }
 
-    img {
+    .container_skab_events img {
         width: 450px;
     }
 
@@ -231,14 +255,14 @@ input[type=submit]:hover {
         margin: 0 250px;
     }
 
-    h2 {
+    .container_skab_events h2 {
         margin-top: 50px;
     }
 
 }
 
 @media screen and (min-width:1200px) {
-    main {
+    .container_skab_events {
         display: grid;
         grid-template-columns: 500px auto 500px;
         ;
@@ -247,7 +271,7 @@ input[type=submit]:hover {
 
     }
 
-    img {
+    .container_skab_events img {
         width: 500px;
     }
 
@@ -287,7 +311,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:2000px) {
-    main {
+    .container_skab_events {
         display: grid;
         grid-template-columns: auto auto auto;
         ;
@@ -297,7 +321,7 @@ input[type=submit]:hover {
 
 
 
-    img {
+    .container_skab_events img {
         width: 700px;
     }
 
@@ -308,21 +332,21 @@ input[type=submit]:hover {
     }
 }
 
-a {
+.container_skab_events a {
     color: black;
     text-decoration: underline;
     cursor: pointer;
 }
 
-a:hover {
+.container_skab_events a:hover {
     font-size: 1.1em;
 }
 
-i {
+.container_skab_events i {
     cursor: pointer;
     font-size: 2em;
 }
 
-i:hover {
+.container_skab_events i:hover {
     font-size: 1.1em;
-}
+}*/

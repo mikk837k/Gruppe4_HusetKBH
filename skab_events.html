@@ -5,75 +5,286 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="skab.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Skab events</title>
 </head>
 
 <body>
+    <div class="margin1"></div>
+    <div class="page_container_skab_events">
+        <div class="klik none"></div>
+        <div class="logo"></div>
 
-    <main>
-        <h1>Skab events</h1>
-        <div class="section1">
-            <img src="img/skab_events.jpg" alt="skab_events">
-
-        </div>
-        <div class="section2">
-            <h2>Skab dine egne events</h2>
-
-            <p>Har du idéer til kulturelle events, klubber eller festivaler? I Huset har du mulighed for at lave dine egne kulturarrangementer.
-
-                Hvert år præsenterer Huset omkring 1500 events arrangeret af og sammen med hundredevis af frivillige ildsjæle og kulturelle iværksættere. Huset er en platform for samskabelse, frivillighed og kulturel iværksætteri. Vi arbejder til dagligt med at udvikle sjove idéer til alternative og unikke oplevelser i samarbejdet med forskellige partnere. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere parter til at skabe nye idéer og løsninger.</p>
-        </div>
-        <div class="section3">
-            <h3>Hvordan kan jeg lave kulturelle events i Huset?</h3>
-
-            <p>Hvis du har et fedt projekt, et event eller en festival, men måske mangler en venue og en samarbejdspartner til at hjælpe med at løfte projektet, så kontakt endelig Huset. Som samarbejdspartner kan vi bl.a. tilbyde fysiske rammer, erfaring og viden, hjælp til planlægning og afvikling, kontakt til interessante partnere osv. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere. Du skal derfor være interesseret i at indgå et partnerskab med Huset.
-
-                Husets aktive brugere initierer også mange nye projekter, events og festivaler og søger altid nye samarbejdspartnere og muligheder. Så tag endelig fat i os, hvis du har lyst til at bidrage og samskabe.</p>
-
-            <p>Mail til Christina Lykkegaard: <a href="mailto:christina@huset-kbh.dk"><i class="fa fa-envelope"></i></a> <br>
-
-                Mail til Alexander Nitze: <a href="mailto:alexander@huset-kbh.dk"><i class="fa fa-envelope"></i></a>
-            </p>
-            <h3>Hvis du mangler et sted til at holde et privat event?</h3>
-
-            <p>Hvis du står og mangler et sted at afholde et privat event, skal du se mere om Gusets udlejningslokaler <a href="https://huset-kbh.dk/udlejning-venues-indreby-lokaler-kbh-huset/">her </a></p>
-        </div>
-
-        <div class="img2">
-            <img src="img/kulturelle_events.jpg" alt="kulturelle_events">
-        </div>
-
-        <div class="section4">
-
-        </div>
-
-        <div class="section5">
-            <h3 class="title">Kontakt os</h3>
-
-            <div class="container">
-                <form action="kontakt_formular">
-
-                    <label for="name">Navn</label>
-                    <input type="text" id="navn" name="dit_navn" placeholder="Dit navn..">
-
-                    <label for="telefon">Telefon</label>
-                    <input type="text" id="telefon" name="telefon" placeholder="Dit telefon nr..">
-
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Din email..">
-
-
-                    <textarea id="text" name="message" placeholder="Send dit spørgsmål til vores mail, og vi svare hurtigst muligt..." style="height: 200px"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+        <div class="header_test">
+            <div class="header_billede">
+                <div class="header_some">
+                    <img class="header_logo one" src="img/logo_insta.png" alt="logo insta instagram icon">
+                    <img class="header_logo two" src="img/logo_facebook.png" alt="logo facebook icon">
+                    <img class="header_logo three" src="img/logo_twitter.png" alt="logo twitter icon">
+                </div>
+                <div class="billede_h"></div>
             </div>
+            <!--           mobil dropdown menu-->
+            <div class="nav_mobile">
+                <div class="dropdown dropdown_gone">
+                    <div class="menu huset">
+                        <p class="overskrift_huset">HUSET</p>
+                        <hr class="streg1">
+                        <div class="undermenu undermenu_huset none">
+                            <p>Bastard Café</p>
+                            <p>TeaterHUSET</p>
+                            <p>Stardust</p>
+                            <p>Evoo</p>
+                            <p>Musikcaféen</p>
+                            <p>Bip Bip Bar (Pop-up)</p>
+                            <p>Husets Biograf</p>
+                        </div>
+                    </div>
+
+                    <div class="menu events">
+                        <p class="overskrift_events">EVENTS</p>
+                        <hr class="streg2">
+                        <div class="undermenu undermenu_events none">
+                            <a href="events.html">
+                                <p>Det sker</p>
+                            </a>
+                            <a href="skab_events.html">
+                                <p>Skab events</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu frivillig">
+                        <p class="overskrift_frivillig">FRIVILLIG</p>
+                        <hr class="streg3">
+                        <div class="undermenu undermenu_frivillig none">
+                            <p>Bliv frivillig</p>
+                            <p>Frivillig-projekter</p>
+                        </div>
+                    </div>
+
+                    <div class="menu lokaler">
+                        <p class="overskrift_lokaler">LEJ LOKALER</p>
+                        <hr class="streg4">
+                        <div class="undermenu undermenu_lokaler none">
+                            <p>Salon K</p>
+                            <p>Balsalen</p>
+                            <p>Musikcaféen</p>
+                            <p>Stardust</p>
+                            <p>Husets Biograf</p>
+                            <p>TeaterHUSET</p>
+                            <p>Bastard Café</p>
+                        </div>
+                    </div>
+
+                    <div class="menu om">
+                        <p class="overskrift_om">OM HUSET</p>
+                        <hr class="streg5">
+                        <div class="undermenu undermenu_om none">
+                            <p>Hvem er vi?</p>
+                            <p>Organisation</p>
+                            <p>Administration</p>
+                            <p>Historie</p>
+                            <p>FAQ</p>
+                            <p>Ledige stillinger</p>
+                        </div>
+                    </div>
+
+                    <div class="menu kontakt">
+                        <p>KONTAKT</p>
+                        <hr class="streg6">
+                    </div>
+                    <div class="search">Her skal være et søgefelt</div>
+                    <div class="pil_luk"></div>
+
+                </div>
+
+                <div class="boks boks_huset none"></div>
+                <div class="boks boks_events none"></div>
+                <div class="boks boks_frivillig none"></div>
+                <div class="boks boks_lokaler none"></div>
+                <div class="boks boks_om none"></div>
+
+                <div class="pil"></div>
+
+
+            </div>
+
         </div>
 
+        <header>
+            <div class="nav_desktop_huset">
+                <p class="nav_overskrift knap_huset">Huset</p>
+                <div class="huset_p">
+                    <div class="nav nav_huset">
+                        <p>Bastard Café</p>
+                        <p>TeaterHUSET</p>
+                        <p>Stardust</p>
+                        <p>Evoo</p>
+                        <p>Musikcaféen</p>
+                        <p>Bip Bip Bar (Pop-up)</p>
+                        <p>Husets Biograf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_desktop_events">
+                <p class="nav_overskrift knap_events">Events</p>
+                <div class="events_p">
+                    <div class="nav nav_events">
+                        <a href="events.html">
+                            <p>Det sker</p>
+                        </a>
+                        <a href="skab_events.html">
+                            <p>Skab events</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_desktop_frivillig">
+                <p class="nav_overskrift knap_frivillig">Bliv frivillig</p>
+                <div class="frivillig_p">
+                    <div class="nav nav_frivillig">
+                        <p>Bliv frivillig</p>
+                        <p>Frivillig-projekter</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_desktop_lokaler">
+                <p class="nav_overskrift knap_lokaler">Lej lokaler</p>
+                <div class="lokaler_p">
+                    <div class="nav nav_lokaler">
+                        <p>Salon K</p>
+                        <p>Balsalen</p>
+                        <p>Musikcaféen</p>
+                        <p>Stardust</p>
+                        <p>Husets Biograf</p>
+                        <p>TeaterHUSET</p>
+                        <p>Bastard Café</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_desktop_om">
+                <p class="nav_overskrift knap_om">Om Huset</p>
+                <div class="om_p">
+                    <div class="nav nav_om">
+                        <p>Hvem er vi?</p>
+                        <p>Organisation</p>
+                        <p>Administration</p>
+                        <p>Historie</p>
+                        <p>FAQ</p>
+                        <p>Ledige stillinger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_desktop_kontakt">
+                <p class="nav_overskrift knap_kontakt">Kontakt</p>
+                <div class="kontakt_p"></div>
+            </div>
+        </header>
+        <div class="container_skab_events">
+            <h1>Skab events</h1>
+            <div class="section1">
+                <img src="img/skab_events.jpg" alt="skab_events">
 
-    </main>
+            </div>
+            <div class="section2">
+                <h2>Skab dine egne events</h2>
 
+                <p>Har du idéer til kulturelle events, klubber eller festivaler? I Huset har du mulighed for at lave dine egne kulturarrangementer.
+
+                    Hvert år præsenterer Huset omkring 1500 events arrangeret af og sammen med hundredevis af frivillige ildsjæle og kulturelle iværksættere. Huset er en platform for samskabelse, frivillighed og kulturel iværksætteri. Vi arbejder til dagligt med at udvikle sjove idéer til alternative og unikke oplevelser i samarbejdet med forskellige partnere. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere parter til at skabe nye idéer og løsninger.</p>
+            </div>
+            <div class="section3">
+                <h3>Hvordan kan jeg lave kulturelle events i Huset?</h3>
+
+                <p>Hvis du har et fedt projekt, et event eller en festival, men måske mangler en venue og en samarbejdspartner til at hjælpe med at løfte projektet, så kontakt endelig Huset. Som samarbejdspartner kan vi bl.a. tilbyde fysiske rammer, erfaring og viden, hjælp til planlægning og afvikling, kontakt til interessante partnere osv. Vi går meget ind for co-creation og samskabelse, da det er vores erfaring, at der opstår noget helt specielt, når man inddrager flere. Du skal derfor være interesseret i at indgå et partnerskab med Huset.
+
+                    Husets aktive brugere initierer også mange nye projekter, events og festivaler og søger altid nye samarbejdspartnere og muligheder. Så tag endelig fat i os, hvis du har lyst til at bidrage og samskabe.</p>
+
+                <p>Mail til Christina Lykkegaard: <a href="mailto:christina@huset-kbh.dk"><i class="fa fa-envelope"></i></a> <br>
+
+                    Mail til Alexander Nitze: <a href="mailto:alexander@huset-kbh.dk"><i class="fa fa-envelope"></i></a>
+                </p>
+                <h3>Hvis du mangler et sted til at holde et privat event?</h3>
+
+                <p>Hvis du står og mangler et sted at afholde et privat event, skal du se mere om Gusets udlejningslokaler <a href="https://huset-kbh.dk/udlejning-venues-indreby-lokaler-kbh-huset/">her </a></p>
+            </div>
+
+            <div class="img2">
+                <img src="img/kulturelle_events.jpg" alt="kulturelle_events">
+            </div>
+
+            <div class="section4">
+
+            </div>
+
+            <div class="section5">
+                <h3 class="title">Kontakt os</h3>
+
+                <div class="container">
+                    <form action="kontakt_formular">
+
+                        <label for="name">Navn</label>
+                        <input type="text" id="navn" name="dit_navn" placeholder="Dit navn..">
+
+                        <label for="telefon">Telefon</label>
+                        <input type="text" id="telefon" name="telefon" placeholder="Dit telefon nr..">
+
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" placeholder="Din email..">
+
+
+                        <textarea id="text" name="message" placeholder="Send dit spørgsmål til vores mail, og vi svare hurtigst muligt..." style="height: 200px"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <footer>
+            <div class="footer_grid">
+                <div class="footer_socialMediaIcons">
+                    <img class="footer_logo one" src="img/logo_insta.png" alt="logo insta instagram icon">
+                    <img class="footer_logo two" src="img/logo_facebook.png" alt="logo facebook icon">
+                    <img class="footer_logo three" src="img/logo_twitter.png" alt="logo twitter icon">
+                </div>
+                <div class="footer_container">
+                    <div class="footer_boxContainer">
+                        <h3>Kontakt</h3>
+                        <p>HUSET-KBH<br>
+                            Rådhusstræde 13<br>
+                            1466 KøbenhavnK</p>
+                        <a href="tel:+45 21512151">Tlf: + 45 2151 2151</a>
+                    </div>
+                    <div class="footer_boxContainer">
+                        <h3>Info</h3>
+                        <a href="" target="_blank">
+                            Nyhedsbrev
+                        </a><br>
+                        <a href="" target="_blank">FAQ</a><br>
+                        <a href="" target="_blank">Persondata</a><br>
+                        <a href="" target="_blank">KBH Kommune</a><br>
+                    </div>
+                    <div class="footer_boxContainer">
+                        <h3>Vær med</h3>
+                        <a href="" target="_blank">Bliv frivillig</a>
+                    </div>
+                </div>
+                <div class="footer_partnerIcons">
+                    <img class="footer_logo four" src="img/logo_danskLive.jpg" alt="logo dansk live icon">
+                    <img class="footer_logo five" src="img/logo_tuborg.jpg" alt="logo tuborg icon">
+                    <img class="footer_logo six" src="img/logo_kbhKommune.jpg" alt="logo københavn kommune kbh icon">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="margin2"></div>
     <script src="Javacript/script_skab.js"></script>
+    <script src="Javacript/script_index.js"></script>
 
 </body>
 
