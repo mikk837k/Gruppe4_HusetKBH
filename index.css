@@ -375,7 +375,7 @@
 
    /* ----------------------------------- events forside kode ---------------------------------- */
 
-   .content_events {
+   .container_events .content_events {
        display: grid;
        grid-template-columns: 10% 80% 10%;
        grid-template-rows: 45% 10% 45%;
@@ -389,28 +389,28 @@
        margin-bottom: 11px;
    }
 
-   .content_events h2 {
+   .container_events .content_events h2 {
        font-size: 1.5em;
        color: black;
    }
 
-   .content_events .event_single {
+   .container_events .content_events .event_single {
        width: 80%;
    }
 
 
-   .content_events img {
+   .container_events .content_events img {
        width: 100%;
        cursor: pointer;
        z-index: 0;
    }
 
-   .knapTilAlleEvents {
+   .container_events .knapTilAlleEvents {
        text-align: right;
        margin-right: 10%;
    }
 
-   .knapTilAlleEvents a {
+   .container_events .knapTilAlleEvents a {
        color: var(--red2);
        font-size: 1.2em;
        text-decoration: none;
@@ -457,14 +457,13 @@
        display: none;
    }
 
-   .data-dato,
-   .data-pris,
-   .data-venue {
+   .container_events .data-dato,
+   .container_events .data-pris,
+   .container_events .data-venue {
        font-weight: 700;
    }
 
-   .data-content {
-
+   .container_events .data-content {
        grid-column-start: 2;
        grid-column-end: 3;
        grid-row-start: 1;
@@ -498,7 +497,7 @@
        left: -300%;
    }
 
-   .data-content div {
+   .container_events .data-content div {
        width: 100%;
        display: grid;
        grid-template-columns: repeat(3, 1fr);
@@ -506,45 +505,45 @@
        background-color: white;
    }
 
-   .data-content img {
+   .container_events .data-content img {
        grid-column: 1 / span 3;
        grid-row-start: 1;
        grid-row-end: 2;
    }
 
-   .data-content h2 {
+   .container_events .data-content h2 {
        grid-row-start: 2;
        grid-row-end: 3;
    }
 
-   .data-content .data-teasertekst {
+   .container_events .data-content .data-teasertekst {
        grid-row-start: 3;
        grid-row-end: 4;
    }
 
-   .data-content .data-dato {
+   .container_events .data-content .data-dato {
        grid-row-start: 4;
        grid-row-end: 5;
    }
 
-   .data-content .data-pris {
+   .container_events .data-content .data-pris {
        grid-row-start: 5;
        grid-row-end: 6;
    }
 
-   .data-content .data-button {
+   .container_events .data-content .data-button {
        grid-row-start: 6;
        grid-row-end: 7;
    }
 
 
-   .data-content p,
+   .container_events .data-content p,
    h2 {
        margin: 4px;
        grid-column: 1 / span 3;
    }
 
-   .content_events button {
+   .container_events .content_events button {
        grid-column: 2;
        border-radius: 50px;
        border-color: rgba(162, 162, 162, 0.42);
@@ -554,13 +553,13 @@
        width: 110px;
    }
 
-   #myImg {
+   .container_events #myImg {
        border-radius: 5px;
        cursor: pointer;
        transition: 0.3s;
    }
 
-   #modal {
+   .container_events #modal {
        width: 100%;
        height: 100%;
        position: fixed;
@@ -581,7 +580,7 @@
 
    }
 
-   #modal-content {
+   .container_events #modal-content {
        grid-column: 2;
        grid-row: 2;
        width: 100%;
@@ -592,20 +591,20 @@
        grid-template-columns: repeat(3, 1fr);
    }
 
-   #modal-content img {
+   .container_events #modal-content img {
        width: 80%;
        transform: scale(1);
    }
 
-   #modal-content h2 {
+   .container_events #modal-content h2 {
        grid-row: 2;
    }
 
-   #modal-content .data-pris {
+   .container_events #modal-content .data-pris {
        font-size: 1em;
    }
 
-   #modal-content .data-tekst {
+   .container_events #modal-content .data-tekst {
 
        grid-column: 1 / span 3;
        grid-row: 3;
@@ -614,16 +613,16 @@
 
    }
 
-   #modal-content .data-tekst {
+   .container_events #modal-content .data-tekst {
        margin: 0;
    }
 
-   #modal-content .img_modal {
+   .container_events #modal-content .img_modal {
        grid-column: 1 / span 3;
        overflow: hidden;
    }
 
-   #modal.vis {
+   .container_events #modal.vis {
 
        opacity: 1;
        pointer-events: all;
@@ -634,7 +633,7 @@
    /* --------------------------------- events forside kode SLUT -------------------------------- */
 
    @media screen and (min-width:550px) {
-       #modal-content {
+       .container_events #modal-content {
            grid-template-rows: auto 50px 1fr;
        }
 
@@ -697,13 +696,13 @@
            grid-template-rows: 80px 350px auto auto auto 0px;
        }
 
-       .content_events {
+       .container_events .content_events {
            grid-template-columns: 6% 41% 6% 41% 6%;
            grid-template-rows: 45% 10% 45%;
            grid-gap: 0px;
        }
 
-       .data-content {
+       .container_events .data-content {
            grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%;
            grid-gap: 14.6%;
        }
@@ -719,7 +718,7 @@
            margin-left: 5.5%;
        }
 
-       .knapTilAlleEvents {
+       .container_events .knapTilAlleEvents {
            margin-right: 5.5%;
        }
 
@@ -1037,12 +1036,12 @@
            display: none;
        }
 
-       .content_events {
+       .container_events .content_events {
            grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
            grid-gap: 0px;
        }
 
-       .data-content {
+       .container_events .data-content {
            grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%;
            grid-gap: 14.3%;
            position: relative;
