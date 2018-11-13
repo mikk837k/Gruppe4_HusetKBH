@@ -1023,12 +1023,8 @@
            grid-row-end: 4;
            grid-column-start: 2;
            grid-column-end: 3;
-       }
-
-       .container_infografik img {
            padding-top: 25px;
            margin-right: 35px;
-           width: 100%;
            max-width: 557px;
        }
 
