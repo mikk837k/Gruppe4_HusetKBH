@@ -1,0 +1,129 @@
+#nyhedsbrev_wrapper form {
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-template-rows: 60px auto 40px;
+}
+
+#nyhedsbrev_wrapper h1 {
+    margin-top: 30px;
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+#nyhedsbrev_wrapper p {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    grid-gap: 10px;
+    font-size: 0.9em;
+    text-align: center;
+
+
+}
+
+#nyhedsbrev_wrapper input {
+    grid-column: 2 / span 1;
+    height: 40px;
+    width: auto;
+    border: none;
+}
+
+#fornavn {
+    margin-top: 10px;
+}
+
+#efternavn {
+    margin-top: 20px
+}
+
+#email {
+    margin-top: 10px;
+}
+
+#nyhedsbrev_wrapper .luk {
+    border: none;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 0;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    /*    background-color: aqua;*/
+}
+
+#nyhedsbrev_wrapper .luk:hover {
+    transform: scale(1.2);
+}
+
+#nyhedsbrev_wrapper .line_one {
+    transform: rotate(45deg);
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    right: 15px;
+    top: 7px;
+    pointer-events: none;
+}
+
+#nyhedsbrev_wrapper .line_two {
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    right: 15px;
+    top: 7px;
+    pointer-events: none;
+}
+
+.nyhedsbrev_modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 85%;
+    height: 100%;
+    overflow: auto;
+    animation: fadein 1s;
+
+    /** Der skal laves en bottom **/
+}
+
+.vis {
+    display: block;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#nyhedsbrev_wrapper .modal-content {
+    background-color: rgb(135, 164, 162);
+    margin: 10 auto 15% auto;
+    border: 1px solid #888;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#tilmeld {
+    grid-column: 3;
+    grid-row: 7;
+    margin-top: 10px;
+    width: 220px;
+    cursor: pointer;
+    background-color: var(--red);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}

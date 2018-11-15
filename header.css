@@ -93,6 +93,26 @@
        transition: transform .5s;
    }
 
+   .udvid_huset {
+       height: 620px;
+   }
+
+   .udvid_events {
+       height: 480px;
+   }
+
+   .udvid_frivillig {
+       height: 480px;
+   }
+
+   .udvid_lokaler {
+       height: 640px;
+   }
+
+   .udvid_om {
+       height: 610px;
+   }
+
    .dropdown p {
        font-size: 1.4em;
        font-weight: 700;
@@ -240,19 +260,19 @@
    }
 
    .pil_luk_events {
-       top: 425px;
+       top: 445px;
    }
 
    .pil_luk_frivillig {
-       top: 425px;
+       top: 445px;
    }
 
    .pil_luk_lokaler {
-       top: 585px;
+       top: 605px;
    }
 
    .pil_luk_om {
-       top: 555px;
+       top: 575px;
    }
 
    .klik {
