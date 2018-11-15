@@ -14,10 +14,6 @@ body {
     display: none;
 }
 
-#singelview_container {
-    background-color: rgb(38, 38, 38);
-}
-
 #singelview_container img {
     width: 100%;
 }
@@ -38,7 +34,9 @@ body {
     line-height: 1.4em;
 }
 
-
+#singelview_container {
+    background-color: rgb(38, 38, 38);
+}
 
 .singelview_splash {
     grid-column: 1 / span 3;
@@ -70,6 +68,50 @@ body {
     padding: 0 10% 30px 10%;
     background-color: var(--lightgreen);
 }
+
+#singelview_container .karrusel_pil {
+    width: 25px;
+    height: 48px;
+    align-self: center;
+    background-size: 100%;
+    justify-self: center;
+    cursor: pointer;
+}
+
+#singelview_container .karrusel_pil1,
+#singelview_container .karrusel_pil3,
+#singelview_container .karrusel_pil5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    background-image: url(img/pil_pink_left.svg);
+    background-color: greenyellow;
+}
+
+#singelview_container .karrusel_pil2,
+#singelview_container .karrusel_pil4,
+#singelview_container .karrusel_pil6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    background-image: url(img/pil_pink_right.svg);
+    background-color: aqua;
+}
+
+#singelview_container .absolute {
+    width: 10%;
+    height: 12%;
+    background-color: rgb(0, 255, 255);
+    position: absolute;
+    display: none;
+}
+
+
+
 
 .singelview_data .upcoming_events {
     grid-column: 2;
@@ -117,16 +159,35 @@ body {
 
 /*-----------------Event styling--------------------*/
 .singelview_event_container {
+    /*
     grid-column: 2;
     grid-row: 6;
+*/
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 45% 10% 45%;
+    grid-gap: 0px;
 }
 
 .singelview_event_container .data-content {
     grid-row: 2;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%;
+    grid-gap: 25%;
+    position: relative;
+}
+
+#singelview_container .position1 {
+    left: -100%;
+}
+
+#singelview_container .position2 {
+    left: -200%;
+}
+
+#singelview_container .position3 {
+    left: -300%;
 }
 
 .singelview_data .event_content {
