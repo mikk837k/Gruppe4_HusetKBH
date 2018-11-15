@@ -42,6 +42,12 @@ function dropdown() {
     function visHuset() {
         console.log("huset");
         // Tavlen viskes ren
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+        document.querySelector(".dropdown").classList.remove("udvid_om");
+
         document.querySelector(".undermenu_events").classList.add("none");
         document.querySelector(".undermenu_frivillig").classList.add("none");
         document.querySelector(".undermenu_lokaler").classList.add("none");
@@ -82,6 +88,9 @@ function dropdown() {
         // lukkepilen flyttes
         pil_luk.classList.add("pil_luk_huset");
 
+        //menuen udvides
+        document.querySelector(".dropdown").classList.add("udvid_huset");
+
         document.querySelector(".boks_huset").addEventListener("click", lukHuset);
     }
 
@@ -99,6 +108,9 @@ function dropdown() {
         // skifter farve på overskriften
         document.querySelector(".overskrift_huset").classList.remove("overskrift_aktiv");
 
+        //fjerner den udvidede menu
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+
         document.querySelector(".huset").addEventListener("click", visHuset);
     }
 
@@ -106,6 +118,11 @@ function dropdown() {
     function visEvents() {
         console.log("events");
         // Tavlen viskes ren
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+        document.querySelector(".dropdown").classList.remove("udvid_om");
         document.querySelector(".undermenu_huset").classList.add("none");
         document.querySelector(".undermenu_frivillig").classList.add("none");
         document.querySelector(".undermenu_lokaler").classList.add("none");
@@ -147,11 +164,14 @@ function dropdown() {
         // lukkepilen flyttes
         pil_luk.classList.add("pil_luk_events");
 
+        document.querySelector(".dropdown").classList.add("udvid_events");
+
         document.querySelector(".boks_events").addEventListener("click", lukEvents);
     }
 
     function lukEvents() {
         console.log("luk events");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
 
         document.querySelector(".boks_events").classList.add("none");
 
@@ -171,6 +191,11 @@ function dropdown() {
     function visFrivillig() {
         console.log("frivillig");
         // Tavlen viskes ren
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+        document.querySelector(".dropdown").classList.remove("udvid_om");
         document.querySelector(".undermenu_huset").classList.add("none");
         document.querySelector(".undermenu_events").classList.add("none");
         document.querySelector(".undermenu_lokaler").classList.add("none");
@@ -212,11 +237,14 @@ function dropdown() {
         // lukkepilen flyttes
         pil_luk.classList.add("pil_luk_frivillig");
 
+        document.querySelector(".dropdown").classList.add("udvid_frivillig");
+
         document.querySelector(".boks_frivillig").addEventListener("click", lukFrivillig);
     }
 
     function lukFrivillig() {
         console.log("luk frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
 
         document.querySelector(".boks_frivillig").classList.add("none");
 
@@ -236,6 +264,11 @@ function dropdown() {
     function visLokaler() {
         console.log("lokaler");
         // Tavlen viskes ren
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+        document.querySelector(".dropdown").classList.remove("udvid_om");
         document.querySelector(".undermenu_huset").classList.add("none");
         document.querySelector(".undermenu_events").classList.add("none");
         document.querySelector(".undermenu_frivillig").classList.add("none");
@@ -277,11 +310,15 @@ function dropdown() {
         // lukkepilen flyttes
         pil_luk.classList.add("pil_luk_lokaler");
 
+        document.querySelector(".dropdown").classList.add("udvid_lokaler");
+
         document.querySelector(".boks_lokaler").addEventListener("click", lukLokaler);
     }
 
     function lukLokaler() {
         console.log("luk lokaler");
+
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
 
         document.querySelector(".boks_lokaler").classList.add("none");
 
@@ -301,6 +338,11 @@ function dropdown() {
     function visOm() {
         console.log("om");
         // Tavlen viskes ren
+        document.querySelector(".dropdown").classList.remove("udvid_huset");
+        document.querySelector(".dropdown").classList.remove("udvid_events");
+        document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+        document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+        document.querySelector(".dropdown").classList.remove("udvid_om");
         document.querySelector(".undermenu_huset").classList.add("none");
         document.querySelector(".undermenu_events").classList.add("none");
         document.querySelector(".undermenu_frivillig").classList.add("none");
@@ -341,13 +383,14 @@ function dropdown() {
 
         // lukkepilen flyttes
         pil_luk.classList.add("pil_luk_om");
+        document.querySelector(".dropdown").classList.add("udvid_om");
 
         document.querySelector(".boks_om").addEventListener("click", lukOm);
     }
 
     function lukOm() {
         console.log("luk om");
-
+        document.querySelector(".dropdown").classList.remove("udvid_om");
         document.querySelector(".boks_om").classList.add("none");
 
         //fjerner baggrundsfarven på undermenuen
@@ -403,6 +446,12 @@ function dropdown_gone() {
     document.querySelector(".overskrift_frivillig").classList.remove("overskrift_aktiv");
     document.querySelector(".overskrift_lokaler").classList.remove("overskrift_aktiv");
     document.querySelector(".overskrift_om").classList.remove("overskrift_aktiv");
+
+    document.querySelector(".dropdown").classList.remove("udvid_huset");
+    document.querySelector(".dropdown").classList.remove("udvid_events");
+    document.querySelector(".dropdown").classList.remove("udvid_frivillig");
+    document.querySelector(".dropdown").classList.remove("udvid_lokaler");
+    document.querySelector(".dropdown").classList.remove("udvid_om");
 
     pil.addEventListener("click", dropdown);
 }

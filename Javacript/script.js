@@ -52,15 +52,19 @@ function showFacility() {
 function showPosts() {
     let myTemplate = document.querySelector("#data-template");
     let removeHide = document.querySelector(".upcoming_events");
+    let karruselPil2 = document.querySelector(".karrusel_pil2");
+    let karruselPil1 = document.querySelector(".karrusel_pil1");
 
     console.log("showPosts kørt");
     if (id == 57) {
         removeHide.classList.add("hide");
-        console.log("hide tilføjet")
+        console.log("hide tilføjet");
+        document.querySelector(".karrusel_pil2").classList.add("hide");
     }
     if (id == 61) {
         removeHide.classList.add("hide");
-        console.log("hide tilføjet")
+        console.log("hide tilføjet");
+        document.querySelector(".karrusel_pil2").classList.add("hide");
     }
 
     if (id == 59) {
@@ -120,4 +124,67 @@ function showPosts() {
             destination.appendChild(klon);
         })
     }
+    document.querySelector(".karrusel_pil2").addEventListener("click", position1);
+
+    function position0() {
+        console.log("position0");
+        document.querySelector(".karrusel_pil1").classList.add("none");
+        document.querySelector(".karrusel_pil3").classList.add("none");
+        document.querySelector(".karrusel_pil5").classList.add("none");
+
+        document.querySelector(".data-content").classList.remove("position1");
+        document.querySelector(".data-content").classList.remove("position2");
+        document.querySelector(".data-content").classList.remove("position3");
+
+        document.querySelector(".karrusel_pil2").classList.remove("none");
+        document.querySelector(".karrusel_pil4").classList.add("none");
+        document.querySelector(".karrusel_pil6").classList.add("none");
+
+        document.querySelector(".karrusel_pil2").addEventListener("click", position1);
+
+    }
+
+    function position1() {
+        console.log("position1");
+
+        document.querySelector(".karrusel_pil1").classList.remove("none");
+        document.querySelector(".karrusel_pil3").classList.add("none");
+        document.querySelector(".karrusel_pil5").classList.add("none");
+
+        document.querySelector(".data-content").classList.add("position1");
+        document.querySelector(".data-content").classList.remove("position2");
+        document.querySelector(".data-content").classList.remove("position3");
+
+        document.querySelector(".karrusel_pil2").classList.add("none");
+        document.querySelector(".karrusel_pil4").classList.remove("none");
+        document.querySelector(".karrusel_pil6").classList.add("none");
+
+        document.querySelector(".karrusel_pil1").addEventListener("click", position0);
+        document.querySelector(".karrusel_pil4").addEventListener("click", position2);
+
+        if (window.innerWidth >= 627) {
+            document.querySelector(".karrusel_pil4").classList.add("hide");
+        }
+    }
+
+    function position2() {
+        console.log("position2");
+
+        document.querySelector(".karrusel_pil1").classList.add("none");
+        document.querySelector(".karrusel_pil3").classList.remove("none");
+        document.querySelector(".karrusel_pil5").classList.add("none");
+
+        document.querySelector(".data-content").classList.remove("position1");
+        document.querySelector(".data-content").classList.add("position2");
+        document.querySelector(".data-content").classList.remove("position3");
+
+        document.querySelector(".karrusel_pil2").classList.add("none");
+        document.querySelector(".karrusel_pil4").classList.add("none");
+        document.querySelector(".karrusel_pil6").classList.add("none");
+
+        document.querySelector(".karrusel_pil3").addEventListener("click", position1);
+        document.querySelector(".karrusel_pil6").addEventListener("click", position3);
+
+    }
+
 }
