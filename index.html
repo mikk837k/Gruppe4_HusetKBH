@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="nyhedsbrev.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -15,6 +16,24 @@
 </head>
 
 <body>
+    <div id="nyhedsbrev_wrapper" class="nyhedsbrev_modal vis">
+
+        <form class="modal-content" action="tilmeld.php">
+            <div class="luk">
+                <div class="line line_one"></div>
+                <div class="line line_two"></div>
+            </div>
+
+            <h1>Tilmeld vores nyhedsbrev</h1>
+
+            <p>Bliv informeret om udvalgte events og festivaler. Få adgang til sjove konkurrencer og særlige tilbud.</p>
+            <input id="fornavn" type="text" placeholder="Fornavn" required> <br>
+            <input id="efternavn" type="text" placeholder="Efternavn" required><br>
+            <input id="email" type="text" placeholder="Email" required> <br>
+
+            <input id="tilmeld" class="vis" type="submit" value="Tilmeld nyhedsbrev" required><span id="response"></span>
+        </form>
+    </div>
     <div class="margin1"></div>
     <div class="max">
         <div class="page_container">
@@ -359,11 +378,16 @@
                 </div>
             </footer>
         </div>
+
     </div>
     <div class="margin2"></div>
+
+
+
     <script src="Javacript/script_header.js"></script>
     <script src="Javacript/script_index.js"></script>
     <script src="Javacript/script_events_index.js"></script>
+    <script src="Javacript/script_nyhedsbrev.js"></script>
 </body>
 
 </html>
