@@ -1,0 +1,606 @@
+   :root {
+       --green: rgb(42, 58, 56);
+       --lightgreen: rgb(135, 164, 162);
+       --red: rgb(211, 7, 42);
+       --red2: rgb(225, 86, 110);
+       --red3: rgb(231, 119, 138);
+       --red4: rgb(240, 168, 180);
+       --red5: rgb(244, 193, 202);
+       --red6: rgb(251, 230, 234);
+
+       --raleway: 'Raleway', sans-serif;
+   }
+
+   body {
+       margin: 0;
+       padding: 0;
+       font-family: var(--raleway);
+       width: 100%;
+       background-color: white;
+   }
+
+   header a,
+   .nav_mobile a {
+       text-decoration: none;
+       color: black;
+   }
+
+   .none {
+       display: none;
+   }
+
+   header {
+       display: none;
+       max-width: 1040px;
+   }
+
+   .header_some {
+       position: fixed;
+       z-index: -1;
+       width: 100%;
+       max-width: 1041px;
+       /*       background-color: red;*/
+       text-align: right;
+       display: none;
+   }
+
+   .header_logo {
+       width: 25px;
+       height: 25px;
+       margin: 10px;
+
+   }
+
+   .header_billede {
+       width: 100%;
+       background-color: white;
+       height: 80px;
+       position: fixed;
+       z-index: 1;
+       max-width: 1040px;
+   }
+
+   .billede_h img {
+       width: 180px;
+       height: 70px;
+       margin-left: 6.5%;
+       margin-top: 5px;
+       z-index: 5;
+   }
+
+   .pil {
+       width: 60px;
+       height: 31px;
+       position: fixed;
+       right: 7%;
+       top: 15px;
+       z-index: 10;
+       background-image: url(img/pil_roed_ned.svg);
+       background-size: 100%;
+   }
+
+   .dropdown {
+       width: 260px;
+       height: 400px;
+       background-color: rgba(135, 164, 162, 0.94);
+       position: fixed;
+       right: 0;
+       top: 0px;
+       text-align: center;
+       z-index: 2;
+       transform: translateY(1);
+       transform-origin: top;
+       transition: transform .5s;
+   }
+
+   .dropdown p {
+       font-size: 1.4em;
+       font-weight: 700;
+       margin: 0px;
+       margin-top: -5px;
+       margin-bottom: 7px;
+       color: white;
+   }
+
+   .dropdown .menu {
+       padding: 8px 0;
+   }
+
+   hr {
+       margin: 0;
+       border-width: 2px;
+       border-color: rgba(42, 58, 56, 0.5);
+   }
+
+   /*
+   .streg1 {
+       border-color: rgba(211, 7, 42, 0.9);
+   }
+
+   .streg2 {
+       border-color: rgb(225, 86, 110, 0.9);
+   }
+
+   .streg3 {
+       border-color: rgb(231, 119, 138, 0.9);
+   }
+
+   .streg4 {
+       border-color: rgb(240, 168, 180, 0.9);
+   }
+
+   .streg5 {
+       border-color: rgb(244, 193, 202, 0.9);
+   }
+
+   .streg6 {
+       border-color: var(--red6);
+   }
+*/
+
+   .huset p {
+       margin-top: 8px;
+
+   }
+
+   .search {
+       padding-bottom: 60px;
+   }
+
+   .dropdown_gone {
+       transform: translateY(-500px);
+   }
+
+   .undermenu p {
+       font-weight: 400;
+       margin: 0 0 10px 0;
+       font-size: 1.2em;
+       color: white;
+   }
+
+   .undermenu {
+       padding: 10px 0;
+       background-color: var(--green);
+
+   }
+
+   /*
+   .undermenu_huset {
+       background-color: rgba(211, 7, 42, 0.9);
+       padding: 10px 0;
+   }
+
+   .undermenu_events {
+       background-color: rgb(225, 86, 110, 0.9);
+       padding: 10px 0;
+   }
+
+   .undermenu_frivillig {
+       background-color: rgb(231, 119, 138, 0.9);
+       padding: 10px 0;
+   }
+
+   .undermenu_lokaler {
+       background-color: rgb(240, 168, 180, 0.9);
+       padding: 10px 0;
+   }
+
+   .undermenu_om {
+       background-color: rgb(244, 193, 202, 0.9);
+       padding: 10px 0;
+   }*/
+
+   .overskrift_aktiv {
+       color: white;
+   }
+
+   .boks {
+       width: 260px;
+       height: 40px;
+       position: fixed;
+       right: 0;
+       background-color: rgba(255, 255, 255, 0);
+       z-index: 10;
+   }
+
+   .boks_huset {
+       top: 5px;
+   }
+
+   .boks_events {
+       top: 55px;
+   }
+
+   .boks_frivillig {
+       top: 105px;
+   }
+
+   .boks_lokaler {
+       top: 155px;
+   }
+
+   .boks_om {
+       top: 208px;
+   }
+
+   .pil_luk {
+       width: 54px;
+       height: 28px;
+       position: absolute;
+       right: 100px;
+       top: 364px;
+       margin-top: 0;
+       margin-right: 0;
+       background-image: url(img/pil_roed_op.svg);
+       background-size: 100%;
+   }
+
+   .pil_luk_huset {
+       top: 585px;
+   }
+
+   .pil_luk_events {
+       top: 425px;
+   }
+
+   .pil_luk_frivillig {
+       top: 425px;
+   }
+
+   .pil_luk_lokaler {
+       top: 585px;
+   }
+
+   .pil_luk_om {
+       top: 555px;
+   }
+
+   .klik {
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.2);
+       position: fixed;
+       z-index: 2;
+   }
+
+   /*SEARCH*/
+
+   .header_search {
+       position: fixed;
+       z-index: -1;
+       width: 100%;
+       max-width: 1040px;
+       text-align: right;
+       display: none;
+       top: 49px;
+   }
+
+   .header_search .example {
+       width: 18.5%;
+       float: right;
+       padding-right: 10px;
+   }
+
+   .header_search form.example input {
+       padding: 10px;
+       font-size: 12px;
+       border: 1px solid grey;
+       float: left;
+       width: 70%;
+       height: 7px;
+       background: #f1f1f1;
+   }
+
+   /*
+   form.example input[type="text"]:focus {
+       box-shadow: 0px 0px 8px rgba(255, 0, 0, 0), 0px 0px 8px rgba(255, 0, 0, 0) !important;
+   }
+*/
+
+
+   .header_search form.example button {
+       /*       margin-top: 10px;*/
+   }
+
+
+   .header_search form.example button {
+       float: right;
+       width: 30px;
+       height: 30px;
+       background: black;
+       color: white;
+       font-size: 17px;
+       /*       border: 1px solid grey;*/
+       border-left: none;
+       cursor: pointer;
+       border-radius: 30%;
+   }
+
+   .header_search form.example button:hover {
+       background: var(--red);
+   }
+
+   .header_search form.example::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+
+
+
+   .nav_mobile form.example input {
+       padding: 10px;
+       font-size: 17px;
+       border: 1px solid grey;
+       float: left;
+       width: 60%;
+       background: #f1f1f1;
+       margin: 10px;
+   }
+
+   /*
+   form.example input[type="text"]:focus {
+       box-shadow: 0px 0px 8px rgba(255, 0, 0, 0), 0px 0px 8px rgba(255, 0, 0, 0) !important;
+   }
+*/
+
+
+   .nav_mobile form.example button {
+       margin-top: 10px;
+   }
+
+
+   .nav_mobile form.example button {
+       float: left;
+       width: 20%;
+       padding: 10px;
+       background: black;
+       color: white;
+       font-size: 17px;
+       /*       border: 1px solid grey;*/
+       border-left: none;
+       cursor: pointer;
+   }
+
+   .nav_mobile form.example button:hover {
+       background: var(--red);
+   }
+
+   .nav_mobile form.example::after {
+       content: "";
+       clear: both;
+       display: table;
+   }
+
+   /*SEARCH SLUT*/
+
+   @media only screen and (min-width: 940px) {
+       body {
+           background-color: rgba(0, 0, 0, 0.85);
+       }
+
+       .header_billede {
+           width: 100%;
+           background-color: white;
+           height: 80px;
+           position: fixed;
+           z-index: 1;
+       }
+
+       .billede_h {
+           width: 190px;
+           height: 100%;
+           margin-left: 4.7%;
+       }
+
+       header {
+           position: fixed;
+           z-index: 5;
+           top: 90px;
+           width: 100%;
+           display: grid;
+           grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+       }
+
+       .nav p {
+           font-weight: 500;
+           font-size: 0.9em;
+           margin: 0;
+           padding: 10px;
+       }
+
+       .nav_overskrift {
+           padding-bottom: 6px;
+           padding-top: 12px;
+           background-color: white;
+           margin-top: -10px;
+           margin-bottom: 0;
+           font-weight: 900;
+           font-size: 1.2em;
+       }
+
+       .nav_desktop_huset {
+           grid-column-start: 1;
+           grid-column-end: 2;
+
+       }
+
+       .huset_p {
+           /*           border-bottom: solid var(--red) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_huset .nav_huset {
+           /*           background-color: var(--red);*/
+           background-color: rgba(135, 164, 162, 0.9);
+           padding-top: 1px;
+           padding-bottom: 1px;
+           display: none;
+       }
+
+       .nav_huset p:hover {
+           font-weight: 700;
+           background-color: rgba(0, 0, 0, 0.13);
+           color: white;
+       }
+
+       .nav_desktop_huset:hover .nav_huset {
+           display: block;
+       }
+
+       .nav_desktop_huset .knap_huset:hover {}
+
+       .nav_desktop_events {
+           grid-column-start: 2;
+           grid-column-end: 3;
+       }
+
+       .events_p {
+           /*           border-bottom: solid var(--red2) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_events .nav_events {
+           /*           background-color: var(--red2);*/
+           background-color: rgba(135, 164, 162, 0.9);
+           padding-top: 1px;
+           padding-bottom: 1px;
+           display: none;
+       }
+
+       .nav_desktop_events:hover .nav_events {
+           display: block;
+       }
+
+       .nav_events p:hover {
+           font-weight: 700;
+           background-color: rgba(0, 0, 0, 0.13);
+           color: white;
+       }
+
+       .nav_desktop_frivillig {
+           grid-column-start: 3;
+           grid-column-end: 4;
+       }
+
+       .frivillig_p {
+           /*           border-bottom: solid var(--red3) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_frivillig .nav_frivillig {
+           /*           background-color: var(--red3);*/
+           background-color: rgba(135, 164, 162, 0.9);
+           padding-top: 1px;
+           padding-bottom: 1px;
+           display: none;
+       }
+
+       .nav_desktop_frivillig:hover .nav_frivillig {
+           display: block;
+       }
+
+       .nav_frivillig p:hover {
+           font-weight: 700;
+           background-color: rgba(0, 0, 0, 0.13);
+           color: white;
+       }
+
+       .nav_desktop_lokaler {
+           grid-column-start: 4;
+           grid-column-end: 5;
+       }
+
+       .lokaler_p {
+           /*           border-bottom: solid var(--red4) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_lokaler .nav_lokaler {
+           /*           background-color: var(--red4);*/
+           background-color: rgba(135, 164, 162, 0.9);
+           padding-top: 1px;
+           padding-bottom: 1px;
+           display: none;
+       }
+
+       .nav_desktop_lokaler:hover .nav_lokaler {
+           display: block;
+       }
+
+       .nav_lokaler p:hover {
+           font-weight: 700;
+           background-color: rgba(0, 0, 0, 0.13);
+           color: white;
+       }
+
+       .nav_desktop_om {
+           grid-column-start: 5;
+           grid-column-end: 6;
+       }
+
+       .om_p {
+           /*           border-bottom: solid var(--red5) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_om .nav_om {
+           /*           background-color: var(--red5);*/
+           background-color: rgba(135, 164, 162, 0.9);
+           padding-top: 1px;
+           padding-bottom: 1px;
+           display: none;
+       }
+
+       .nav_desktop_om:hover .nav_om {
+           display: block;
+       }
+
+       .nav_om p:hover {
+           font-weight: 700;
+           background-color: rgba(0, 0, 0, 0.13);
+           color: white;
+       }
+
+       .nav_desktop_kontakt {
+           grid-column-start: 6;
+           grid-column-end: 7;
+       }
+
+       .kontakt_p {
+           /*           border-bottom: solid var(--red6) 10px;*/
+           border-bottom: solid white 10px;
+       }
+
+       .nav_desktop_kontakt:hover .knap_kontakt {
+           color: var(--lightgreen);
+       }
+
+       header p {
+           text-align: center;
+           font-weight: 700;
+           color: black;
+           margin-bottom: 12px;
+       }
+
+       .nav_mobile {
+           display: none;
+       }
+
+       .header_some {
+           display: block;
+       }
+
+       .header_search {
+           display: block;
+       }
+   }
+
+   @media only screen and (min-width: 1040px) {
+       body {
+           display: grid;
+           grid-template-columns: auto 1040px auto;
+           grid-template-rows: 130px auto;
+       }
+
+   }

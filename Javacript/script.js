@@ -58,6 +58,11 @@ function showPosts() {
         removeHide.classList.add("hide");
         console.log("hide tilføjet")
     }
+    if (id == 61) {
+        removeHide.classList.add("hide");
+        console.log("hide tilføjet")
+    }
+
     if (id == 59) {
         myMusicPosts.forEach(post => {
 
@@ -108,7 +113,7 @@ function showPosts() {
             klon.querySelector("h2").innerHTML = post.acf.titel;
             klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
             klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
-            klon.querySelector(".data-pris").innerHTML = "Pris: " + post.acf.pris + " kr";
+            klon.querySelector(".data-pris").innerHTML = "GRATIS";
             klon.querySelector(".data-button").innerHTML = post.acf.kobtilmeld;
 
             //        klon.querySelector(".data-textarea").innerHTML = post.acf.tekst;

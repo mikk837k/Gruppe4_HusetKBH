@@ -5,7 +5,7 @@ let myFilmPosts;
 let myTeaterPosts;
 let eventet;
 let modal = document.querySelector("#modal");
-let closeModal = document.querySelector(".luk");
+let closeModal = document.querySelector(".lukknap");
 let destination = document.querySelector(".data-content");
 
 let post;
@@ -93,7 +93,34 @@ function showPosts() {
 
         }
     })
-
+    if (eventFilter == "alle") {
+        document.querySelector(".filter_alle").classList.remove("red_underline");
+        document.querySelector(".filter_film").classList.remove("red_underline");
+        document.querySelector(".filter_musik").classList.remove("red_underline");
+        document.querySelector(".filter_teater").classList.remove("red_underline");
+        document.querySelector(".filter_alle").classList.add("red_underline");
+    }
+    if (eventFilter == "film") {
+        document.querySelector(".filter_alle").classList.remove("red_underline");
+        document.querySelector(".filter_film").classList.remove("red_underline");
+        document.querySelector(".filter_musik").classList.remove("red_underline");
+        document.querySelector(".filter_teater").classList.remove("red_underline");
+        document.querySelector(".filter_film").classList.add("red_underline");
+    }
+    if (eventFilter == "musik") {
+        document.querySelector(".filter_alle").classList.remove("red_underline");
+        document.querySelector(".filter_film").classList.remove("red_underline");
+        document.querySelector(".filter_musik").classList.remove("red_underline");
+        document.querySelector(".filter_teater").classList.remove("red_underline");
+        document.querySelector(".filter_musik").classList.add("red_underline");
+    }
+    if (eventFilter == "teater") {
+        document.querySelector(".filter_alle").classList.remove("red_underline");
+        document.querySelector(".filter_film").classList.remove("red_underline");
+        document.querySelector(".filter_musik").classList.remove("red_underline");
+        document.querySelector(".filter_teater").classList.remove("red_underline");
+        document.querySelector(".filter_teater").classList.add("red_underline");
+    }
 
 }
 
@@ -117,6 +144,18 @@ function visModal(eventet) {
             modal.classList.remove("vis");
         }
     }
+    if (window.innerWidth >= 650) {
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.classList.remove("vis");
+            }
+            if (event.target == closeModal) {
+                modal.classList.remove("vis");
+            }
+
+        }
+    }
+
 }
 
 //function hideModal() {

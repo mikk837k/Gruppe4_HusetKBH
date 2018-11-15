@@ -5,6 +5,7 @@ let myFilmPosts;
 let myTeaterPosts;
 let eventet;
 let modal = document.querySelector("#modal");
+let closeModal = document.querySelector(".lukknap");
 let destination = document.querySelector(".data-content");
 
 let all = [];
@@ -158,17 +159,26 @@ function visModal(eventet) {
     modal.querySelector("h2").innerHTML = eventet.acf.titel;
     modal.querySelector(".data-tekst").innerHTML = eventet.acf.tekst;
     modal.querySelector(".data-dato").innerHTML = "Dato: " + eventet.acf.dato;
-    if (window.innerWidth >= 575) {
-        modal.querySelector(".data-pris").innerHTML = "Pris: " + eventet.acf.pris + " kr";
-    } else {
-        modal.querySelector(".data-pris").innerHTML = "Pris:<br> " + eventet.acf.pris + " kr";
-    }
     modal.querySelector(".data-venue").innerHTML = "Venue: " + eventet.acf.venue;
+    modal.querySelector(".data-pris").innerHTML = "Pris: " + eventet.acf.pris + " kr";
+    modal.querySelector(".data-venue").innerHTML = "Venue: " + eventet.acf.venue;
+    modal.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + eventet.acf.tidspunkt;
+    modal.querySelector(".data-button").innerHTML = eventet.acf.kobtilmeld;
 
     window.onclick = function (event) {
-        if (event.target == modal) {
-            //            modal.style.display = "none";
+        if (event.target == closeModal) {
             modal.classList.remove("vis");
+        }
+    }
+    if (window.innerWidth >= 650) {
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.classList.remove("vis");
+            }
+            if (event.target == closeModal) {
+                modal.classList.remove("vis");
+            }
+
         }
     }
     showPosts();
