@@ -128,7 +128,7 @@ function visModal(eventet) {
 
     modal.classList.add("vis");
     modal.querySelector("img").src = eventet.acf.billede;
-
+    modal.querySelector("img").alt = eventet.title.rendered;
 
     modal.querySelector("h2").innerHTML = eventet.acf.titel;
     modal.querySelector(".data-tekst").innerHTML = eventet.acf.tekst;

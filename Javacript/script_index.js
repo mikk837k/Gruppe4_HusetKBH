@@ -28,6 +28,9 @@ async function hentInfografik() {
 
     function bastard() {
         console.log("bastard");
+
+        id_51.classList.add("cursor");
+
         document.querySelector(".container_infografik #id51 #tekst51 #n22 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id51 #tekst51 #n21 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id51 #tekst51 #n20 path ").setAttribute("fill", "#d3072a");
@@ -87,6 +90,8 @@ async function hentInfografik() {
     function bipbip() {
         console.log("bipip");
 
+        id_61.classList.add("cursor");
+
         document.querySelector(".container_infografik #id61 #tekst61 #m13 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id61 #tekst61 #m12 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id61 #tekst61 #m11 path ").setAttribute("fill", "#d3072a");
@@ -127,6 +132,9 @@ async function hentInfografik() {
 
     function evoo() {
         console.log("evoo");
+
+        id_57.classList.add("cursor");
+
         document.querySelector(".container_infografik #id57 #tekst57 #p35 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id57 #tekst57 #p34 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id57 #tekst57 #p33 path ").setAttribute("fill", "#d3072a");
@@ -211,6 +219,9 @@ async function hentInfografik() {
 
     function bio() {
         console.log("bio");
+
+        id_55.classList.add("cursor");
+
         document.querySelector(".container_infografik #id55 #tekst55 #a24 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id55 #tekst55 #a23 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id55 #tekst55 #a22 path ").setAttribute("fill", "#d3072a");
@@ -274,6 +285,9 @@ async function hentInfografik() {
 
     function teater() {
         console.log("teater");
+
+        id_teater.classList.add("cursor");
+
         document.querySelector(".container_infografik #teater #tekstteater #s24 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #teater #tekstteater #s23 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #teater #tekstteater #s22 path ").setAttribute("fill", "#d3072a");
@@ -337,6 +351,9 @@ async function hentInfografik() {
 
     function musik() {
         console.log("musik");
+
+        id_59.classList.add("cursor");
+
         document.querySelector(".container_infografik #id59 #tekst59 #x22 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id59 #tekst59 #x21 path ").setAttribute("fill", "#d3072a");
         document.querySelector(".container_infografik #id59 #tekst59 #x20 path ").setAttribute("fill", "#d3072a");
