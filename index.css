@@ -234,6 +234,12 @@ footer {
     margin-bottom: 0;
 }
 
+.container_events .content_events .data-content p.mere {
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
 .container_events .content_events .data-content h2 {
     margin: 0 5%;
     margin-bottom: 10px;
@@ -527,15 +533,15 @@ h2 {
         text-decoration: underline;
     }
 
-    .position1 {
+    .container_events .position1 {
         left: -94%;
     }
 
-    .position2 {
+    .container_events .position2 {
         left: -188%;
     }
 
-    .position3 {
+    .container_events .position3 {
         left: -282%;
     }
 
@@ -667,15 +673,15 @@ h2 {
         margin-right: 4%;
     }
 
-    .position1 {
+    .container_events .position1 {
         left: -96%;
     }
 
-    .position2 {
+    .container_events .position2 {
         left: -192%;
     }
 
-    .position3 {
+    .container_events .position3 {
         left: -288%;
     }
 

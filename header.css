@@ -61,7 +61,7 @@
        height: 80px;
        position: fixed;
        z-index: 1;
-       max-width: 1040px;
+       max-width: 1039.5px;
    }
 
    .billede_h img {
@@ -395,6 +395,23 @@
    }
 
    /*SEARCH SLUT*/
+
+   /* mere tekst */
+   .mere {
+       color: var(--red);
+       margin-top: 10px;
+       font-weight: 600;
+       cursor: pointer;
+   }
+
+   .mere:hover {
+       text-decoration: underline;
+   }
+
+   .page_container p.mere {
+       margin-left: 0;
+   }
+
 
    @media only screen and (min-width: 940px) {
        body {
