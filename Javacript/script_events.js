@@ -83,16 +83,19 @@ function showPosts() {
                 visModal(post);
             });
             klon.querySelector("h2").innerHTML = post.acf.titel;
-            klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
+            klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst + "<p class='mere'> Læs mere</p>";
+            klon.querySelector(".data-teasertekst").addEventListener("click", () => {
+                visModal(post);
+            });
             klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
             klon.querySelector(".data-pris").innerHTML = "Pris: " + post.acf.pris + " kr";
             klon.querySelector(".data-button").innerHTML = post.acf.kobtilmeld;
 
             //        klon.querySelector(".data-textarea").innerHTML = post.acf.tekst;
             destination.appendChild(klon);
-
         }
     })
+
     if (eventFilter == "alle") {
         document.querySelector(".filter_alle").classList.remove("red_underline");
         document.querySelector(".filter_film").classList.remove("red_underline");

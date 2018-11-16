@@ -18,6 +18,10 @@ async function hentInfografik() {
     let id_teater = document.querySelector(".container_infografik #teater");
     let id_59 = document.querySelector(".container_infografik #id59");
 
+    //nyhedsbrev
+    let svartekst = "";
+    //nyhedsbrev
+
     id_51.addEventListener("mouseover", bastard);
     id_61.addEventListener("mouseover", bipbip);
     id_57.addEventListener("mouseover", evoo);
@@ -25,6 +29,44 @@ async function hentInfografik() {
     id_teater.addEventListener("mouseover", teater);
     id_59.addEventListener("mouseover", musik);
 
+    //nyhedsbrev
+    document.querySelector("form").addEventListener("submit", kaldText);
+    //nyhedsbrev
+
+    //nyhedsbrev
+    async function kaldText(e) {
+        e.preventDefault();
+        let navn = this.querySelector("input[type=text]").value;
+        let url = "tilmeld.php?navn=" + navn;
+        let svar = await fetch(url);
+        svartekst = await svar.text();
+        show();
+        this.querySelector("input[type=text]").value = "";
+
+    }
+
+    function show(response) {
+        document.querySelector("#response").textContent = svartekst;
+    }
+
+    document.querySelector("form").addEventListener("submit", visdata);
+
+    function visdata(e) {
+        e.preventDefault();
+        console.log(document.querySelector("#fornavn").value);
+        console.log(document.querySelector("#efternavn").value);
+        console.log(document.querySelector("#email").value);
+        //OBS javascript kan ikke gemme data andre steder end på ens computer.
+    }
+    document.querySelector(".nyhedsbrev_modal .luk").addEventListener("click", visModal);
+    document.querySelector("#tilmeld").addEventListener("click", visModal);
+
+    function visModal() {
+        document.querySelector("#nyhedsbrev_wrapper").classList.remove("vis");
+        document.querySelector("#nyhedsbrev_wrapper").classList.remove("vis");
+    }
+
+    //nyhedsbrev
 
     function bastard() {
         console.log("bastard");

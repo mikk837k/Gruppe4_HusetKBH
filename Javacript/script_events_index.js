@@ -60,7 +60,12 @@ function showPosts() {
         });
 
         klon.querySelector("h2").innerHTML = post.acf.titel;
-        klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst;
+        klon.querySelector(".data-teasertekst").innerHTML = post.acf.teasertekst + "<p class='mere'> Læs mere</p>";
+
+        klon.querySelector(".data-teasertekst").addEventListener("click", () => {
+            visModal(post);
+        });
+
         klon.querySelector(".data-dato").innerHTML = "Dato: " + post.acf.dato;
         //        klon.querySelector(".data-tidspunkt").innerHTML = "Tidspunkt: " + post.acf.tidspunkt;
 
