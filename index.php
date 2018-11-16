@@ -115,29 +115,29 @@
 
                 <!--            kode fra Bibi-->
                 <div class="knapTilAlleEvents">
-                    <a href="events.html">
+                    <a href="events.php">
                         <p>Se alle events</p>
                     </a>
                 </div>
             </div>
             <div class="container_aktiviteter">
                 <div class="content_bastard">
-                    <a href="singelview.html?id=51"><img src="img/bastard.jpg" alt="billede fra bastard café"></a>
+                    <a href="singelview.php?id=51"><img src="img/bastard.jpg" alt="billede fra bastard café"></a>
                 </div>
                 <div class="content_teater">
                     <a href="https://www.teater-huset.dk" target="_blank"><img src="img/teater.jpg" alt="billede fra teater huset"></a>
                 </div>
                 <div class="content_evoo">
-                    <a href="singelview.html?id=57"><img src="img/evoo.jpg" alt="billede af mad fra evoo street kitchen"></a>
+                    <a href="singelview.php?id=57"><img src="img/evoo.jpg" alt="billede af mad fra evoo street kitchen"></a>
                 </div>
                 <div class="content_musik">
-                    <a href="singelview.html?id=59"><img src="img/musik.jpg" alt="billede fra musikcaféen"></a>
+                    <a href="singelview.php?id=59"><img src="img/musik.jpg" alt="billede fra musikcaféen"></a>
                 </div>
                 <div class="content_bio">
-                    <a href="singelview.html?id=55"><img src="img/bio.jpg" alt="billede fra husets biograf"></a>
+                    <a href="singelview.php?id=55"><img src="img/bio.jpg" alt="billede fra husets biograf"></a>
                 </div>
                 <div class="content_bipbip">
-                    <a href="singelview.html?id=61"><img src="img/bipbip.jpg" alt="billede for bip bip bar"></a>
+                    <a href="singelview.php?id=61"><img src="img/bipbip.jpg" alt="billede for bip bip bar"></a>
                 </div>
             </div>
             <!--        her skal indsættes php-->

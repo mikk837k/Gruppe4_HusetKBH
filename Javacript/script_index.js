@@ -97,7 +97,7 @@ async function hentInfografik() {
         document.querySelector(".container_infografik #id51 #tekst51 #n1").setAttribute("stroke", "#d3072a");
 
         id_51.addEventListener("click", () => {
-            window.location.href = "singelview.html?id=51";
+            window.location.href = "singelview.php?id=51";
         });
 
         id_51.addEventListener("mouseout", bastardHvid);
@@ -149,7 +149,7 @@ async function hentInfografik() {
         document.querySelector(".container_infografik #id61 #tekst61 #m1 path").setAttribute("fill", "#d3072a");
 
         id_61.addEventListener("click", () => {
-            window.location.href = "singelview.html?id=61";
+            window.location.href = "singelview.php?id=61";
         });
 
         id_61.addEventListener("mouseout", bipipHvid);
@@ -214,7 +214,7 @@ async function hentInfografik() {
         document.querySelector(".container_infografik #id57 #tekst57 #p1 path").setAttribute("fill", "#d3072a");
 
         id_57.addEventListener("click", () => {
-            window.location.href = "singelview.html?id=57";
+            window.location.href = "singelview.php?id=57";
         });
 
         id_57.addEventListener("mouseout", evooHvid);
@@ -290,7 +290,7 @@ async function hentInfografik() {
         document.querySelector(".container_infografik #id55 #tekst55 #a1 path").setAttribute("fill", "#d3072a");
 
         id_55.addEventListener("click", () => {
-            window.location.href = "singelview.html?id=55";
+            window.location.href = "singelview.php?id=55";
         });
 
         id_55.addEventListener("mouseout", bioHvid);
@@ -420,7 +420,7 @@ async function hentInfografik() {
         document.querySelector(".container_infografik #id59 #tekst59 #x1 path").setAttribute("fill", "#d3072a");
 
         id_59.addEventListener("click", () => {
-            window.location.href = "singelview.html?id=59";
+            window.location.href = "singelview.php?id=59";
         });
 
         id_59.addEventListener("mouseout", musikHvid);
