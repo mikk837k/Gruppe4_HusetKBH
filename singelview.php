@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="footer.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <div class="margin1"></div>
     <div class="page_container_singleview">
         <!--        her skal indsættes php-->
-
+        <?php include "header.html"; ?>
         <!--        her skal indsættes php-->
         <main id="singelview_container">
             <div class="singelview_data">
@@ -70,14 +71,13 @@
 
         </main>
         <!--        her skal indsættes php-->
-
+        <?php include "footer.html"; ?>
         <!--        her skal indsættes php-->
     </div>
     <div class="margin2"></div>
 
     <script src="Javacript/script_header.js"></script>
     <script src="Javacript/script.js"></script>
-    <script src="Javacript/script_footer.js"></script>
 
 </body>
 

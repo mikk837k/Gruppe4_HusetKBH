@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="header.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Skab events - Huset KBH</title>
 </head>
 
@@ -16,7 +17,7 @@
     <div class="margin1"></div>
     <div class="page_container_skab_events">
         <!--        her skal indsættes php-->
-
+        <?php include "header.html"; ?>
         <!--        her skal indsættes php-->
         <div class="container_skab_events">
             <div class="section1">
@@ -72,13 +73,12 @@
 
         </div>
         <!--        her skal indsættes php-->
-
+        <?php include "footer.html"; ?>
         <!--        her skal indsættes php-->
     </div>
     <div class="margin2"></div>
     <script src="Javacript/script_header.js"></script>
     <script src="Javacript/script_skab.js"></script>
-    <!--    <script src="Javacript/script_footer.js"></script>-->
 
 </body>
 

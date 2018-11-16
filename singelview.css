@@ -95,7 +95,7 @@ div {
     grid-row-end: 3;
     position: relative;
     background-image: url(img/pil_pink_left.svg);
-/*    background-color: greenyellow;*/
+    /*    background-color: greenyellow;*/
 }
 
 #singelview_container .karrusel_pil2,
@@ -107,7 +107,7 @@ div {
     grid-row-end: 3;
     position: relative;
     background-image: url(img/pil_pink_right.svg);
-/*    background-color: aqua;*/
+    /*    background-color: aqua;*/
 }
 
 #singelview_container .absolute {
@@ -412,7 +412,7 @@ div {
 */
 
     .singelview_data {
-        padding-top: 130px;
+        padding-top: 120px;
     }
 
     #singelview_container {

@@ -466,7 +466,7 @@
 
        .huset_p {
            /*           border-bottom: solid var(--red) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
            cursor: pointer;
        }
 
@@ -497,7 +497,7 @@
 
        .events_p {
            /*           border-bottom: solid var(--red2) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
            cursor: pointer;
        }
 
@@ -526,7 +526,7 @@
 
        .frivillig_p {
            /*           border-bottom: solid var(--red3) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
            cursor: pointer;
        }
 
@@ -555,7 +555,7 @@
 
        .lokaler_p {
            /*           border-bottom: solid var(--red4) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
            cursor: pointer;
        }
 
@@ -584,7 +584,7 @@
 
        .om_p {
            /*           border-bottom: solid var(--red5) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
            cursor: pointer;
        }
 
@@ -614,7 +614,8 @@
 
        .kontakt_p {
            /*           border-bottom: solid var(--red6) 10px;*/
-           border-bottom: solid white 10px;
+/*           border-bottom: solid white 10px;*/
+           border-bottom: solid var(--) 10px;
        }
 
        .nav_desktop_kontakt:hover .knap_kontakt {

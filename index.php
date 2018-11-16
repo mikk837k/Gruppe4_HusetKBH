@@ -39,7 +39,8 @@
         <div class="page_container">
             <!--        her skal indsættes php-->
             <?php include "header.html"; ?>
-            <!--        her skal indsættes php-->
+           <!--        her skal indsættes php-->
+
             <div class="container_billede">
 
                 <img src="img/index.jpg" alt="billede af husets indgangsparti">

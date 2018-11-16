@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function startMenu() {
-
-    pil.addEventListener("click", dropdown);
+    if (window.innerWidth <= 939) {
+        pil.addEventListener("click", dropdown);
+    }
 }
 
 function dropdown() {

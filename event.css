@@ -308,7 +308,7 @@
            }
 
            .event_button {
-               padding-top: 110px;
+               padding-top: 100px;
                grid-row-start: 1;
                grid-row-end: 2;
            }

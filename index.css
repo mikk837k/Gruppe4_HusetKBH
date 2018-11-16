@@ -597,7 +597,7 @@ h2 {
     }
 
     .page_container {
-        grid-template-rows: 80px 50px auto auto auto;
+        grid-template-rows: 70px 50px auto auto auto;
         grid-template-columns: 40% 60%;
     }
 
