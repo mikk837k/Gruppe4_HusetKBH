@@ -1,5 +1,9 @@
 /* --------------------------- grid ----------------------------------*/
 
+.cursor {
+    cursor: pointer;
+}
+
 .page_container {
     display: grid;
     grid-template-columns: 100%;

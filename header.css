@@ -44,6 +44,10 @@
        display: none;
    }
 
+   .header_some img {
+       cursor: pointer;
+   }
+
    .header_logo {
        width: 25px;
        height: 25px;
@@ -346,8 +350,6 @@
        display: table;
    }
 
-
-
    .nav_mobile form.example input {
        padding: 10px;
        font-size: 17px;
@@ -448,6 +450,7 @@
        .huset_p {
            /*           border-bottom: solid var(--red) 10px;*/
            border-bottom: solid white 10px;
+           cursor: pointer;
        }
 
        .nav_desktop_huset .nav_huset {
@@ -478,6 +481,7 @@
        .events_p {
            /*           border-bottom: solid var(--red2) 10px;*/
            border-bottom: solid white 10px;
+           cursor: pointer;
        }
 
        .nav_desktop_events .nav_events {
@@ -506,6 +510,7 @@
        .frivillig_p {
            /*           border-bottom: solid var(--red3) 10px;*/
            border-bottom: solid white 10px;
+           cursor: pointer;
        }
 
        .nav_desktop_frivillig .nav_frivillig {
@@ -534,6 +539,7 @@
        .lokaler_p {
            /*           border-bottom: solid var(--red4) 10px;*/
            border-bottom: solid white 10px;
+           cursor: pointer;
        }
 
        .nav_desktop_lokaler .nav_lokaler {
@@ -562,6 +568,7 @@
        .om_p {
            /*           border-bottom: solid var(--red5) 10px;*/
            border-bottom: solid white 10px;
+           cursor: pointer;
        }
 
        .nav_desktop_om .nav_om {
@@ -585,6 +592,7 @@
        .nav_desktop_kontakt {
            grid-column-start: 6;
            grid-column-end: 7;
+           cursor: pointer;
        }
 
        .kontakt_p {
