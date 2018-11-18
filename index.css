@@ -341,7 +341,13 @@ h2 {
     display: grid;
     grid-template-columns: 5% auto 5%;
     grid-template-rows: 2% auto 2%;
+}
 
+/*Når klassen vis tilføjes tilføjes modalen, ændres opacity'en fra 0 til 1 hvorved modalvinduet bliver synligt. Transition giver en glidende fremtoning, frem for at vinduet pludselig dukker op*/
+.container_events #modal.vis {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
 }
 
 .container_events #modal-content {
@@ -380,12 +386,6 @@ h2 {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-start: 5;
-}
-
-.container_events #modal.vis {
-    opacity: 1;
-    pointer-events: all;
-    transition: 0.5s;
 }
 
 .container_events #modal-content .luk {

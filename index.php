@@ -39,7 +39,7 @@
         <div class="page_container">
             <!--        her skal indsættes php-->
             <?php include "header.html"; ?>
-           <!--        her skal indsættes php-->
+            <!--        her skal indsættes php-->
 
             <div class="container_billede">
 
@@ -68,20 +68,23 @@
                     </div>
                     <div class="karrusel_pil karrusel_pil3 none"></div>
                     <div class="karrusel_pil karrusel_pil5 none"></div>
-
-
                     <!--            kode fra Bibi-->
-                    <section id="modal">
 
+
+                    <!--Modalvinduet udfyldes med informationer fra json-filen. Vinduet er som udgangspunkt skjult, men kommer frem ved klik på eventets billede eller 'læs mere'knappen-->
+                    <section id="modal">
                         <div id="modal-content">
+                            <!--Lukknap man kan klikke på for at lukke modalvinduet. Knappen er to streger, der er stylet til et kryds vha. css.  Alternativt kan man klikket ved siden af modalvinduet. -->
                             <div class="luk">
                                 <div class=lukknap>
                                     <div class="line one"></div>
                                     <div class="line two"></div>
                                 </div>
                             </div>
+                            <!--her indsættes eventets billede-->
                             <img class="modal-billede" src="" alt="">
                             <h2></h2>
+                            <!--container, der er grid for informationer, der skal stå sammen-->
                             <div class="subContainer">
                                 <p class="data-dato"></p>
                                 <p class="data-tidspunkt"></p>
@@ -89,30 +92,32 @@
                             </div>
                             <p class="data-tekst"></p>
                             <p class="data-pris"></p>
+                            <!--knap til køb af billet-->
                             <button class="data-button"></button>
                         </div>
                     </section>
+                    <!-- indeholder data hentet fra json-filen omkring alle events'ne. data-content er det sted, hvor informationen der er hentet og klonet, bliver sat ind. -->
                     <div class="data-content"></div>
+                    <!--pilene bliver brugt til at klikke på, idet events'ne indgår i en karrusel på forsiden af sitet-->
                     <div class="karrusel_pil karrusel_pil2">
                         <div class="absolute"></div>
                     </div>
                     <div class="karrusel_pil karrusel_pil4 none"></div>
                     <div class="karrusel_pil karrusel_pil6 none"></div>
                 </div>
-
+                <!--templaten er ikke synlig på sitet, men er der hvor alle oplysningerne fra json-filen bliver sat ind og klonet, inden de så bliver tilføjet sitet i data-content, som er destinationen for oplysningerne-->
                 <template id="data-template">
                     <div>
                         <img class="topImage" src="" alt="">
                         <h2></h2>
                         <p class="data-teasertekst"></p>
                         <p class="data-dato"></p>
-                        <!--                    <p class="data-tidspunkt"></p>-->
-                        <!--                   <p class="data-venue"></p>-->
                         <p class="data-pris"></p>
                         <button class="data-button"></button>
-
                     </div>
                 </template>
+
+
 
                 <!--            kode fra Bibi-->
                 <div class="knapTilAlleEvents">
