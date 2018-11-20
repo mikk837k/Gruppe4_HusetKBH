@@ -76,8 +76,8 @@ footer {
 
     .footer_grid {
         display: grid;
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 200px 80px;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 30px 200px 80px;
     }
 
     /*
